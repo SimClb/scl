@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link-->
+    <script src="https://kit.fontawesome.com/28921dc381.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'homepage/style.css' %}" defer>
+    <link rel="stylesheet" href="https://use.typekit.net/cad5hbs.css">
+    <link rel="stylesheet" href="{% static 'homepage/home.css' %}" defer>
+    <link rel="stylesheet" href="{% static 'mailer/contact.css' %}" defer>
+
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+        <div class="item item__logo">
+            <a href="{% url 'home' %}">
+                SCL
+            </a>
+        </div>
+        <div class="item item__burger" id="burgerMenu" onclick="showLinks()">
+            <div class="line"></div>
+            <div class="line line__small"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div id="menu">
+        <div class="links">
+            <span>
+                <a href="{% url 'home' %}" class="home" onclick="linkClicked()"></a>
+            </span>
+            <span>
+                <a href="{% url 'home' %}#curriculum" class="about" onclick="linkClicked()"></a>
+            </span>
+            <span>
+                <a href="{% url 'contact' %}" class="contact" onclick="linkClicked()"></a>
+            </span>
+        </div>
+    </div>
+
+    {% block content %}{% endblock content %}
+        
+
+    <footer>
+        <div class="footerBox">
+            <div class="contact">
+                <h4>Contact</h4>
+                <a href="https://goo.gl/maps/Vwn8VvJ4SyZi5xGL8?coh=178571&entry=tt">Bruxelles</a>
+                <a href="tel:+32470642469">0470.64.24.69</a>
+                <a href="{% url 'contact' %}">contact@scl-solution.com</a>
+            </div>
+            <div class="menu">
+                <h4>Menu</h4>
+                <a href="{% url 'home' %}">Accueil</a>
+                <a href="{% url 'home' %}#curriculum">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+        </div>
+        <div class="footerLinks">
+                <a href="#" class="link link__insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="link link__git">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="link link__linkdin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+        </div>
+        <h5>Simon Clabots | Fullstack Developper </h5>
+    </footer>
+
+    <script src="{% static  'main.js' %}"></script>
+    
+    {% block script %}{% endblock script %}   
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+  background-color: #2B2F3A;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2B2F3A;
+  color: #EBF5EE;
+}
+header .item {
+  width: 80%;
+  margin: 70px 0px;
+}
+header .item__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .item__title h1 {
+  font-size: 60px;
+  font-family: "interstate", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header .item__title .smalNav {
+  width: 220px;
+  margin: -15px auto 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .item__title .smalNav .line {
+  width: 10px;
+  height: 2px;
+  background-color: #EBF5EE;
+}
+header .item__title .smalNav a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EBF5EE;
+  text-decoration: none;
+  border: 1px solid #EBF5EE;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+header .item__title .smalNav a:hover, header .item__title .smalNav a:focus {
+  color: #d2d2d2;
+  border-color: #d2d2d2;
+}
+header .item__title .smalNav a i {
+  font-size: 1.8em;
+}
+header .item__speech {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+header .item__speech i {
+  text-align: justify;
+  margin: 10px 0px;
+}
+header .item__speech .sign {
+  text-align: right;
+  margin-right: 30px;
+}
+header .item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .item__link a {
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+header .item__link a:hover, header .item__link a:focus {
+  color: #d2d2d2;
+}
+
+.curriculum {
+  background-color: #fff;
+  padding: 40px 0px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.curriculum .part {
+  margin: 20px 0px;
+  width: 80%;
+}
+.curriculum .part h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.curriculum .part-one {
+  text-align: center;
+}
+.curriculum .part-one .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin: auto;
+}
+.curriculum .part-one .picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.curriculum .part-one .name h2 {
+  font-weight: 300;
+}
+.curriculum .part-one .name span {
+  font-weight: 100;
+  font-size: 0.8em;
+}
+.curriculum .part-two p, .curriculum .part-two li {
+  text-align: justify;
+  line-height: 22px;
+  color: #444444;
+  z-index: 1;
+}
+.curriculum .part-two .container {
+  margin: 60px 0px 0px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+.curriculum .part-two .container .arrow {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+}
+.curriculum .part-two .container .arrow i {
+  font-size: 1.4em;
+  color: #444444;
+}
+.curriculum .part-two .container .arrow:nth-child(1) {
+  right: 0px;
+}
+.curriculum .part-two .container .arrow:nth-child(2) {
+  left: 0px;
+}
+.curriculum .part-two .container .arrow:hover, .curriculum .part-two .container .arrow:focus {
+  cursor: pointer;
+}
+.curriculum .part-two .container .slides-container {
+  height: min-content;
+  width: 100%;
+  padding: 0px 10px;
+  display: flex;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+.curriculum .part-two .container .slides-container::-webkit-scrollbar {
+  display: none;
+}
+.curriculum .part-two .container .slides-container .slide {
+  width: 80%;
+  height: 100%;
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.curriculum .part-two .container .slides-container .slide p {
+  width: 70%;
+  text-align: justify;
+  margin: 20px auto;
+  margin-top: 20px;
+  font-size: 1.05em;
+}
+.curriculum .part-two .container .slides-container .slide h4 {
+  font-size: 1.3em;
+  color: #444444;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #EBF5EE;
+  background-color: #EBF5EE;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.curriculum .part-two .container .slides-container .slide .title {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 15px 0px;
+}
+.curriculum .part-three {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px 60px;
+}
+.curriculum .part-three a {
+  width: 158px;
+  height: 45.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 200;
+  border: 3px solid #EBF5EE;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #444444;
+  transition: all 200ms ease-in-out;
+}
+.curriculum .part-three a:hover, .curriculum .part-three a:focus {
+  background-color: #EBF5EE;
+}/*# sourceMappingURL=home.css.map */

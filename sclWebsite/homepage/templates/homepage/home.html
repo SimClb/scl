@@ -1,0 +1,152 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+
+
+<head>
+    <script src="https://kit.fontawesome.com/28921dc381.js" crossorigin="anonymous"></script>
+</head>
+
+{% block title %}SCL | home{% endblock title %}
+
+{% block content %}
+
+    <header>
+
+        <div class="item item__title">
+            <h1>SCL</h1>
+            <div class="smalNav">
+                <div class="line"></div>
+
+                <a href="#" class="link link__insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="link link__git">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" class="link link__linkdin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="item item__speech">
+            <i>
+                "La première impression est cruciale sur internet. L'image que projette une société à travers son site web et ses réseaux sociaux peut déterminer si les internautes deviendront ou non des clients fidèles."
+            </i>
+            <i class="sign">Chat GPT</i>
+        </div>
+        <div class="item item__link">
+            <a href="{% url 'contact' %}" class="link">
+                Me contacter
+            </a>
+        </div>
+
+    </header>
+
+    <section class="curriculum" id="curriculum">
+        <div class="part part-one">
+            <div class="picture">
+                <img src="{% static 'profile.png' %}" alt="photo de profile">
+            </div>
+            <div class="name">
+                <h2>Simon Clabots<br><span>Développeur fullstack</span></h2>
+            </div>
+        </div>
+        <div class="part part-two">
+            <h4>Qui suis-je ?</h4>
+
+            <p>
+                Tout n'est qu'algorithme, entrée, processus et enfin sortie.
+                Dans mon cas, en entrée nous avions un ordinateur offert par papy,
+                ni frère, ni soeur et pas d'amis. En processus, temps libre à coder 
+                et apprendre la magie de l'informatique. Et enfin en sortie, un développeur
+                web fullstack qui saura résoudre tous vos problèmes armé de son ordi. 
+                Allant d'un site vitrine à une boutique en ligne je suis votre homme ! 
+            </p>
+            <br>
+            <h4>Mes "Outils"</h4>
+
+            <ul>
+                <li>Html</li>
+                <li>Sass</li>
+                <li>Javascript</li>
+                <li>Python (Django)</li>
+                <li>Php</li>
+                <li>Et même du scriptshell pour vos projets les plus fous 🙃</li>
+            </ul>
+            <br>
+            <h4>Processus de création</h4>
+
+            <div class="container">
+
+                <div class="arrow arrow__next" id="arrow-next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="arrow arrow__prev" id="arrow-prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <ul class="slides-container" id="slides-container">
+                
+                    <li class="slide">
+                        <h4>1</h4>
+                        <div class="title title__one">
+                            Plans + fondations
+                        </div>
+                        <p>
+                            Discussion autour d'une table afin de comprendre exactement vos besoins
+                            et attentes. Plusieurs designs personnalisés vous
+                            seront présentés, vous choississez celui que vous voulez. 
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <h4>2</h4>
+                        <div class="title title__two">
+                            Le chantier
+                        </div>
+                        <p>
+                            Une fois le design validé, le chantier est lancé et vous n'avez qu'à 
+                            demander pour en connaître les avancées. Contraîrement aux habituels chantiers, 
+                            les deadlines sont réspectées !     
+                        </p>
+                    </li>
+                    <li class="slide">
+                        <h4>3</h4>
+                        <div class="title title__three">
+                            Déployement et entretient
+                        </div>
+                        <p>
+                            Déployement de votre site/ application web dans le monde réel ! 
+                            Vous n'avez rien à faire, je m'occupe de tout; hébergement, nom de domaine,... 
+                            Et voilà, votre activité est maintenant en ligne ! 🥳
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="part part-three">
+            <a href="{% url 'contact' %}" class="link contact-me">
+                Me contacter
+            </a>
+        </div>
+
+    </section>
+
+
+
+
+
+{% endblock content %}
+
+
+{% block script %}
+    <script src="{% static  'carousel.js' %}"></script>
+{% endblock script %}
+    

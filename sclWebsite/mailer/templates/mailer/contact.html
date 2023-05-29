@@ -1,0 +1,40 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block title %}SCL | contact{% endblock title %}
+
+
+<head>
+    <script src="https://kit.fontawesome.com/28921dc381.js" crossorigin="anonymous"></script>
+</head>
+
+{% block content %}
+
+    <section class="contact-section">
+        <div class="header">
+            <i class="fa-regular fa-paper-plane"></i>
+        </div>
+
+        <div class="contact-form">
+            <div class="title">
+                <h2>Me contacter</h2>
+                <div class="underline"></div>
+            </div>
+            <form action="" method="POST" name="form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" id="button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+{% endblock content %}
+
+
+{% block script %}
+    <!--<script src="{% static  'secu.js' %}"></script>-->
+{% endblock script %}
+    
+
+
+    

@@ -1,0 +1,10 @@
+asgiref==3.6.0
+Django==4.1.7
+dotenv==0.0.5
+Pillow==9.4.0
+python-dotenv==1.0.0
+python-http-client==3.3.7
+sendgrid==6.10.0
+sendmail==2.0
+sqlparse==0.4.3
+starkbank-ecdsa==2.2.0

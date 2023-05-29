@@ -1,0 +1,23 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block title %}SCL | Message envoyé !{% endblock title %}
+
+
+<head>
+    <script src="https://kit.fontawesome.com/28921dc381.js" crossorigin="anonymous"></script>
+</head>
+
+{% block content %}
+
+    <section class="messageSent">
+        <div class="containerSent">
+            <div class="circle">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h1>Message envoyé !!! Merci {{ username }}</h1>
+        </div>
+        
+    </section>
+
+{% endblock content %}
